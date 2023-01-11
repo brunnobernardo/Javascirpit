@@ -25,10 +25,13 @@
 <body>
     <h1>Hello, world! Agora vou aprender JS</h1>
     <p>Ansioso para começar!!!</p> 
-     <script> /* Finalmente uma linha de JS */
-        alert('Minha primeira mensagem!')
-        confirm('Está gostando de JS???') // Ou window.confirm...
-        prompt('Qual é o seu nome?')
+     <script> 
+        var n1 = Number.parseInt(window.prompt('Digite um número')) // Prompt retorna String, por isso utilizamos o parseInt/Float para conversão
+        var n2 = parseInt(prompt('Digite outro número') ) // Jeito simplificado
+        var soma = n1 + n2
+        alert(`A soma entre ${n1} e ${n2} é ${soma}: `)
+        /*var n1 = Number(prompt('Digite um número')) Maneira mais simplificada e que automatiza o Int ou Float*/
+        /*alert('A soma dos números digitados é: ' + Stirng (soma) ) Conversão para String */
     </script>
 </body>
 </html>
