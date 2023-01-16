@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Brasileiro ou Gringo??</h1>
+    Diga qual país você nasceu: <input type="text" name="txtp1" id="txtp1">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="pais">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var txtp = document.getElementById('txtp1')
+            var pais = document.getElementById('pais')
+            pais.innerHTML = `Você é natural de ${txtp.value}`
+            if (txtp1.value == 'Brasil') {
+                pais.innerHTML += '<p>Você é brasileiro</p>'
+            } else {
+                pais.innerHTML += '<p>Você é gringo</p>'
+            }
+        }
+    </script>
+</body>
+</html>
