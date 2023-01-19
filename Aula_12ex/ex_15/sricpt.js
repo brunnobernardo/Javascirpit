@@ -5,13 +5,13 @@ function verificar() {
     var fano = document.getElementById('txtano')
     var res = document.getElementById('res')
 
-    if (fano.value.length == 0 || fano.value > ano) {
+    if (fano.value.length == 0 || fano.value > ano) { // Se o usário entrar no formulário com uma data inválida
         alert('[ERRO] Verifique o ano digitado')
-    } else {
+    } else { // Caso esteja certo o input do usário no formulário
         var fsexo = document.getElementsByName('radiosex')
         var idade = ano - Number(fano.value)
         var genero = ''
-        var img = document.createElement('img') // == <img> </img>
+        var img = document.createElement('img') // == <img></img>
         img.setAttribute('id' ,'foto') // == <img id="foto"></img>
         
         if (fsexo[0].checked) { // Caso seja homem
@@ -19,7 +19,7 @@ function verificar() {
             if (idade >= 0 && idade <= 10) {
                 img.setAttribute('src', 'bbm.png')
                 // Crinça
-            } else if (idade <= 21){
+            } else if (idade <= 21) {
                 img.setAttribute('src', 'jovemm.png')
                 //Jovem
             } else if (idade < 50) {
@@ -32,10 +32,10 @@ function verificar() {
 
         } else if (fsexo[1].checked) { // Caso seja Mulher
             genero = 'Mulher'
-            if (idade >= 0 && idade <= 10){
+            if (idade >= 0 && idade <= 10) {
                 img.setAttribute('src', 'bbf.png')
                 // Crinça
-            } else if (idade <= 21){
+            } else if (idade <= 21) {
                 img.setAttribute('src', 'jovemf.png')
                 //Jovem
             } else if (idade < 50) {
@@ -49,6 +49,6 @@ function verificar() {
     }
 
     res.style.textAlign = 'center'  // Centralizou a resposta
-    res.innerHTML = `Detectamos: ${genero} com ${idade} anos`
-    res.appendChild(img) // Para linkar a nova tag img
+    res.innerHTML = `Detectamos: ${genero} com ${idade} anos` // Escreveu a resposta
+    res.appendChild(img) // Para linkar a nova tag img criado no JS
 }
