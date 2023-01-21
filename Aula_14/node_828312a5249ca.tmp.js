@@ -22,10 +22,11 @@ for (var c = 1; c <= 4; c++) {
 console.log('Fim!')
 */
 
+
+
 var i = 1
 var f = 10
 var p = 2
-for (var c = i; c <= f;c += p) {
-    console.log(c)
+for (var c = i; c <= f;c + p) {
+    console.log = c
 }
-console.log('Fim...')
