@@ -10,4 +10,3 @@ if (pos == -1) { // Caso o valor não esteja presente na tabela
 } else {
     console.log(`O valor procurado está na posição ${pos}`)
 }
-
