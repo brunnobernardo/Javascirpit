@@ -11,12 +11,20 @@ function fatorial(n) {
 console.log(fatorial(5))
 */
 
-let valores = [1, 5, 7, 8]
+let valores = [8, 5, 7, 1]
 let soma = 0
-for (let pos in valores) {
+let  maior = valores[0]
+let  menor = valores[0]
+for (let pos in valores) { // == for (let pos = 0; pos < valores.length; pos ++)
     soma += valores[pos]
     console.log(`Indíce ${pos}  valor ${valores[pos]}`)
+    if (valores[pos] > maior)
+    maior = valores[pos]
+    if (valores[pos] < menor)
+    menor = valores[pos] 
 }
 
 console.log(`A soma da lista é ${soma}`)
+console.log(`o maior número da lista é ${maior}`)
+console.log(`o menor número da lista é ${menor}`)
 

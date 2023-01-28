@@ -43,7 +43,7 @@ function finalizar() {
         let menor = valores[0]
         let soma = 0
         let media = 0
-        
+
         for (let pos in valores) { // Faz uma varredura de todos os valores presentes na lista
             soma += valores[pos] // Faz a soma geral de todos os itens presentes na lista
 
