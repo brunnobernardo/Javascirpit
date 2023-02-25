@@ -12,7 +12,7 @@ function contar() {
     } else {
         res.innerHTML = 'Contando: <br>'
         if (p <= 0) {
-            alert('Oasso inválido! Considerando passo 1')
+            alert('Passo inválido! Considerando passo 1')
             p = 1 
         }
         if (i < f) {
